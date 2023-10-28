@@ -2,6 +2,7 @@ package com.moodmusic.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
+
 @Configuration
 public class SpotifyConfig {
 
@@ -12,12 +13,15 @@ public class SpotifyConfig {
     private String clientSecret;
 
 
+    public SpotifyConfig(){
 
+    }
     public String getClientId() {
         return clientId;
     }
     public String getClientSecret() {
         return clientSecret;
     }
+
 }
 
